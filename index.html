@@ -2,73 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Srinz Overseas</title>
+  <title>StudyUSA</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <h2>Srinz</h2>
+<header id="navbar">
+  <h1>StudyUSA</h1>
   <nav>
-    <a href="#">Home</a>
-    <a href="#usa">Study in USA</a>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
-    <a href="#products">Products</a>
+    <a href="#usa">USA</a>
+    <a href="#bags">Bags</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Study in USA with Confidence</h1>
-  <p>Guiding students to top universities with expert support</p>
-  <button>Get Free Consultation</button>
-  <img src="https://images.unsplash.com/photo-1508435234994-67cfd7690508" class="hero-img">
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Your Gateway to Study in the USA</h2>
+    <p>Admissions • Visa • Scholarships • End-to-End Support</p>
+    <button>Apply Now</button>
+  </div>
 </section>
 
-<section id="usa" class="section">
-  <h2>Study in USA 🇺🇸</h2>
-  <p>We help you get admission into top universities across the United States with complete support from application to visa.</p>
-</section>
-
-<section id="services" class="section">
+<section class="services" id="services">
   <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">University Selection</div>
-    <div class="card">Application Assistance</div>
-    <div class="card">Visa Guidance</div>
-    <div class="card">Scholarship Support</div>
+  <div class="grid">
+    <div class="card">University Admissions</div>
+    <div class="card">Visa Assistance</div>
+    <div class="card">Scholarship Guidance</div>
+    <div class="card">Accommodation Support</div>
   </div>
 </section>
 
-<section class="section dark">
-  <h2>Why Choose Us</h2>
-  <p>✔ Personalized guidance  
-     ✔ High visa success rate  
-     ✔ End-to-end support  
-     ✔ Trusted by students</p>
+<section class="usa" id="usa">
+  <h2>Study in the USA 🇺🇸</h2>
+  <p>Top-ranked universities, global exposure, and unmatched career opportunities.</p>
 </section>
 
-<section id="products" class="section">
-  <h2>Our Products</h2>
-  <p>We also manufacture eco-friendly premium cotton bags.</p>
-
-  <div class="cards">
-    <div class="card">Reusable Cotton Bags</div>
-    <div class="card">Custom Printed Bags</div>
-    <div class="card">Bulk Orders Available</div>
-  </div>
+<section class="bags" id="bags">
+  <h2>Eco Cotton Bags</h2>
+  <p>Premium sustainable bags designed for everyday use.</p>
 </section>
 
-<section id="contact" class="section dark">
-  <h2>Contact Us</h2>
-  <p>Email: your@email.com</p>
-  <p>Phone: +91 XXXXX XXXXX</p>
+<section class="contact" id="contact">
+  <h2>Start Your Journey</h2>
+  <button>Contact Us</button>
 </section>
 
-<footer>
-  <p>© 2026 Srinz Overseas. All rights reserved.</p>
-</footer>
+<script>
+  // simple scroll animation
+  const elements = document.querySelectorAll('.card, section h2, section p');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
