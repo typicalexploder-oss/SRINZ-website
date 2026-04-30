@@ -115,3 +115,10 @@ footer {
   text-align: center;
   padding: 25px;
 }
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
