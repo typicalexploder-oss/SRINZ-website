@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>StudyUSA</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Srinz | Global Study Abroad Experts</title>
+  <meta name="description" content="Srinz helps students achieve their dream of studying in the USA with affordable programs, expert guidance, and high visa success rates." />
+  <meta name="keywords" content="study abroad USA, Srinz, overseas education India, USA universities, F1 visa help, study in USA consultants" />
+  <meta name="author" content="Srinz" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://srinz.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/Srinz.svg" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://srinz.com/" />
+  <meta property="og:title" content="Srinz | The Global Academic Hub" />
+  <meta property="og:description" content="Affordable USA study programs with expert guidance and strong visa success rates." />
+  <meta property="og:image" content="https://srinz.com/assets/newhero.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Srinz | Study Abroad Experts" />
+  <meta name="twitter:description" content="Study in the USA with Srinz – affordable and reliable guidance." />
+  <meta name="twitter:image" content="https://srinz.com/assets/newhero.svg" />
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="YOUR_GSC_CODE" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/variables.css">
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Srinz",
+    "url": "https://srinz.com",
+    "logo": "https://srinz.com/assets/Srinz.svg",
+    "description": "Srinz is a global education consultancy helping students study in the USA.",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.linkedin.com/"
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
 </head>
-<body>
 
-<header id="navbar">
-  <h1>StudyUSA</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#usa">USA</a>
-    <a href="#bags">Bags</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<body class="font-sans bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h2>Your Gateway to Study in the USA</h2>
-    <p>Admissions • Visa • Scholarships • End-to-End Support</p>
-    <button>Apply Now</button>
-  </div>
-</section>
+  <div id="root"></div>
 
-<section class="services" id="services">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">University Admissions</div>
-    <div class="card">Visa Assistance</div>
-    <div class="card">Scholarship Guidance</div>
-    <div class="card">Accommodation Support</div>
-  </div>
-</section>
-
-<section class="usa" id="usa">
-  <h2>Study in the USA 🇺🇸</h2>
-  <p>Top-ranked universities, global exposure, and unmatched career opportunities.</p>
-</section>
-
-<section class="bags" id="bags">
-  <h2>Eco Cotton Bags</h2>
-  <p>Premium sustainable bags designed for everyday use.</p>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Start Your Journey</h2>
-  <button>Contact Us</button>
-</section>
-
-<script>
-  // simple scroll animation
-  const elements = document.querySelectorAll('.card, section h2, section p');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  });
-
-  elements.forEach(el => observer.observe(el));
-</script>
+  <script type="module" src="/index.jsx"></script>
 
 </body>
+
 </html>
